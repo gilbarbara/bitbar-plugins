@@ -1,0 +1,23 @@
+{
+  "name": "bitbar-plugins",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Gil Barbara <gilbarbara@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilbarbara/bitbat-plugins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gilbarbara/bitbat-plugins/issues"
+  },
+  "homepage": "https://gilbarbara.github.com/bitbat-plugins/",
+  "keywords": [
+    "bitbar",
+    "bitbar-plugin",
+    "plugins"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
