@@ -1,0 +1,7 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "brace-style": ["warn", "stroustrup"],
+    "no-console": "off"
+  }
+}
