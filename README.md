@@ -1,3 +1,11 @@
 # bitbar-plugins
 
-Coming soon
+**Codeship**  
+List recent builds
+
+**Sentry**  
+List recent issues
+
+**Travis**  
+List recent builds or all your repos
+
