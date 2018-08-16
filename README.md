@@ -4,19 +4,23 @@
 
 After you install the plugin, you'll need to edit it and configure.
 
-**Codeship**  
+**Codeship** [+ add to bitbar](https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/codeship.5m.js)  
 List recent builds  
-[+ Add to bitbar](bitbar://openPlugin?title=Codeship&src=https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/codeship.5m.js)
 
-**Jira**  
+
+**Jira** [+ add to bitbar](https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/jira.10m.js)  
 List issues  
-[+ Add to bitbar](bitbar://openPlugin?title=Codeship&src=https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/jira.10m.js)
 
-**Sentry**  
+
+**Sentry** [+ add to bitbar](https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/sentry.5m.js)  
 List recent issues  
-[+ Add to bitbar](bitbar://openPlugin?title=Codeship&src=https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/sentry.5m.js)
 
-**Travis**  
+
+**Travis** [+ add to bitbar](https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/travis.5m.js)  
 List recent builds or all your repos  
-[+ Add to bitbar](bitbar://openPlugin?title=Codeship&src=https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/travis.5m.js)
 
+### How to use them
+
+  * Just drop the plugin into your BitBar plugins folder (if you have the repo, why not use the `Enabled` folder?)
+  * Make sure it's executable (in Terminal, do `chmod +x plugin.sh`)
+  * Then choose `Refresh all` from the BitBar menus
