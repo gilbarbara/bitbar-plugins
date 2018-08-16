@@ -7,9 +7,9 @@ const PASSWORD = '';
 const ORGANIZATION_NAME = '';
 const PROJECT_ID = '';
 /* DON'T EDIT BELOW */
-
-const AUTH = Buffer.from(`${USER}:${PASSWORD}`).toString('base64');
+const BASE_URL = 'api.codeship.com';
 const PROJECT_URL = `https://app.codeship.com/projects/${PROJECT_ID}`;
+const AUTH = Buffer.from(`${USER}:${PASSWORD}`).toString('base64');
 const COLORS = {
   success: '#42A86F',
   testing: '#607192',
@@ -97,7 +97,7 @@ function handleResponse(body) {
 
 function request(options = {}) {
   const OPTIONS = {
-    hostname: 'api.codeship.com',
+    hostname: BASE_URL,
     path: `/v2${options.path || '/auth'}`,
     port: 443,
     method: options.method || 'GET',
