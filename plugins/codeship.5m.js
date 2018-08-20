@@ -129,8 +129,8 @@ function handleResponse(body) {
   const content = body.map(formatBuild).join('\n---\n');
   const output = [
     `|image=${ICON}`,
-    `RELOAD | image=${RELOAD_ICON} refresh=true`,
     content,
+    `RELOAD | image=${RELOAD_ICON} refresh=true`,
   ];
   console.log(output.join('\n---\n'));
 }

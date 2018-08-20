@@ -1,26 +1,33 @@
 # bitbar-plugins
 
-### Get [BitBar](https://github.com/matryer/bitbar/releases/latest) and run it.
+### Setup
 
-After you install the plugin, you'll need to edit it and configure.
+- Get [BitBar](https://github.com/matryer/bitbar/releases/latest) and run it
+- Save the script in the folder you just selected for storing your plugins
+- Open the script and configure it
+- Make sure it's executable (in Terminal, do `chmod +x plugin.sh`)
+- Then choose `Refresh all` from the BitBar menus
 
-**Codeship** [+ add to bitbar](https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/codeship.5m.js)  
+**Codeship**  
 List recent builds  
+<a href="https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/codeship.5m.js" download="codeship.5m.js">download</a>
 
 
-**Jira** [+ add to bitbar](https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/jira.10m.js)  
+**GitHub Notifications**  
+List notifications  
+<a href="https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/github-notifications.5m.js" download="github-notifications.5m.js">download</a>
+
+**Jira**  
 List issues  
+<a href="https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/jira.5m.js" download="jira.5m.js">download</a>
 
 
-**Sentry** [+ add to bitbar](https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/sentry.5m.js)  
+**Sentry**  
 List recent issues  
+<a href="https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/sentry.5m.js" download="sentry.5m.js">download</a>
 
 
-**Travis** [+ add to bitbar](https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/travis.5m.js)  
+**Travis**  
 List recent builds or all your repos  
+<a href="https://raw.githubusercontent.com/gilbarbara/bitbar-plugins/master/plugins/travis.5m.js" download="travis.5m.js">download</a>
 
-### How to use them
-
-  * Just drop the plugin into your BitBar plugins folder (if you have the repo, why not use the `Enabled` folder?)
-  * Make sure it's executable (in Terminal, do `chmod +x plugin.sh`)
-  * Then choose `Refresh all` from the BitBar menus

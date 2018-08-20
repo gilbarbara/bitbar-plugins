@@ -53,24 +53,6 @@ function request(options = {}) {
   });
 }
 
-function groupNotifications(data) {
-  return data.reduce((acc, { repository, subject, unread, updated_at: updatedAt }) => {
-    if (!acc[repository.full_name]) {
-      acc[repository.full_name] = [];
-    }
-
-    acc[repository.full_name].push({
-      title: subject.title,
-      url: subject.url.replace('api.github.com/repos', 'github.com'),
-      type: subject.type,
-      unread,
-      updatedAt,
-    });
-
-    return acc;
-  }, {});
-}
-
 function timeSince(dateString) {
   const date = new Date(dateString);
   const seconds = Math.floor((new Date() - date) / 1000);
@@ -143,39 +125,10 @@ function handleResponse(body) {
   console.log(output.join('\n---\n'));
 }
 
-function handleResponseGrouped(body) {
-  const repos = groupNotifications(body);
-  const output = [
-    `|image=${ICON}`,
-    `RELOAD | image=${RELOAD_ICON} refresh=true`,
-  ];
-
-  Object.keys(repos).forEach((repo) => {
-    const content = [
-      `${repo} | color=gray`,
-    ];
-    repos[repo]
-      .map(formatNotification)
-      .map(d => content.push(d));
-
-    output.push(content.join('\n'));
-  });
-
-  console.log(output.join('\n---\n'));
-}
-
 const getNotifications = () => request({
   path: '/notifications?all=true&per_page=10',
 });
 
-const args = process.argv;
-
-if (args[2]) {
-  const [, , type] = args;
-  console.log(type);
-}
-else {
-  getNotifications()
-    .then(handleResponse)
-    .catch(err => console.log(err.toString()));
-}
+getNotifications()
+  .then(handleResponse)
+  .catch(err => console.log(err.toString()));
