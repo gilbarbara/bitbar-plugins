@@ -7,7 +7,13 @@ const PASSWORD = '';
 const ORGANIZATION_NAME = '';
 const PROJECT_ID = '';
 /* DON'T EDIT BELOW */
-
+// <bitbar.title>Codeship</bitbar.title>
+// <bitbar.version>v1.0</bitbar.version>
+// <bitbar.author>Gil Barbara</bitbar.author>
+// <bitbar.author.github>gilbarbara</bitbar.author.github>
+// <bitbar.desc>List recent builds.</bitbar.desc>
+// <bitbar.dependencies>node</bitbar.dependencies>
+// <bitbar.abouturl>https://github.com/gilbarbara/bitbar-plugins</bitbar.abouturl>
 const BASE_URL = 'api.codeship.com';
 const PROJECT_URL = `https://app.codeship.com/projects/${PROJECT_ID}`;
 const AUTH = Buffer.from(`${USER}:${PASSWORD}`).toString('base64');

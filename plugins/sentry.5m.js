@@ -7,7 +7,13 @@ const ORGANIZATION = '';
 const PROJECT = '';
 const ISSUE_COUNT = 5;
 /* DON'T EDIT BELOW */
-
+// <bitbar.title>Sentry</bitbar.title>
+// <bitbar.version>v1.0</bitbar.version>
+// <bitbar.author>Gil Barbara</bitbar.author>
+// <bitbar.author.github>gilbarbara</bitbar.author.github>
+// <bitbar.desc>List recent issues.</bitbar.desc>
+// <bitbar.dependencies>node</bitbar.dependencies>
+// <bitbar.abouturl>https://github.com/gilbarbara/bitbar-plugins</bitbar.abouturl>
 const BASE_URL = 'sentry.io';
 const PROJECT_URL = `https://sentry.io/${ORGANIZATION}/${PROJECT}`;
 const TITLE = [`${ORGANIZATION}/${PROJECT}`, '@', 'Sentry'].join(' ');
