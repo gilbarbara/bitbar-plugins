@@ -65,6 +65,7 @@ function timeSince(dateString) {
   let intervalType;
 
   let interval = Math.floor(seconds / 31536000);
+
   if (interval >= 1) {
     intervalType = 'year';
   }
@@ -104,10 +105,10 @@ function timeSince(dateString) {
   return `${interval} ${intervalType}`;
 }
 
-function formatTitle({ subject, unread }) {
-  const url = subject.url.replace('api.github.com/repos', 'github.com');
+function formatTitle(data) {
+  const { subject, unread } = data;
 
-  return `${subject.title} | href=${url} length=48 color=${unread ? '#4078C0' : 'black'}`;
+  return `${subject.title} | href=${getURL(data)} length=48 color=${unread ? '#4078C0' : 'black'}`;
 }
 
 function formatInfo({ repository, updated_at: updatedAt }) {
@@ -119,6 +120,24 @@ function formatNotification(data) {
     formatTitle(data),
     formatInfo(data),
   ].join('\n');
+}
+
+function getURL(data) {
+  const { repository, subject } = data;
+  let output = '';
+
+  if (subject.url) {
+    output = subject.url.replace('api.github.com/repos', 'github.com');
+  }
+  else {
+    output = repository.html_url;
+
+    if (subject.type === 'Discussion') {
+      output += '/discussions';
+    }
+  }
+
+  return output;
 }
 
 function handleResponse(body) {
