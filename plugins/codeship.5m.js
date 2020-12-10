@@ -21,6 +21,7 @@ const COLORS = {
   success: '#42A86F',
   testing: '#607192',
   error: '#D12C3F',
+  // eslint-disable-next-line camelcase
   infrastructure_failure: '#9E212F',
   stopped: '#C4CDCE',
   waiting: '#3FCBDA',

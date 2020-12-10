@@ -1,16 +1,16 @@
 {
   "name": "bitbar-plugins",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "author": "Gil Barbara <gilbarbara@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gilbarbara/bitbat-plugins.git"
+    "url": "https://github.com/gilbarbara/bitbar-plugins"
   },
   "bugs": {
-    "url": "https://github.com/gilbarbara/bitbat-plugins/issues"
+    "url": "https://github.com/gilbarbara/bitbar-plugins/issues"
   },
-  "homepage": "https://gilbarbara.github.com/bitbat-plugins/",
+  "homepage": "https://gilbarbara.github.com/bitbar-plugins/",
   "keywords": [
     "bitbar",
     "bitbar-plugin",
@@ -18,11 +18,12 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.4.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
   },
   "scripts": {
+    "lint": "eslint plugins",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
